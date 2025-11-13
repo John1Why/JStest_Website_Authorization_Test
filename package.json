@@ -1,0 +1,17 @@
+{
+  "name": "auth-testing",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha --require test-setup.js *.test.js",
+    "test:watch": "mocha --require test-setup.js --watch *.test.js",
+    "test:global": "mocha e2e.test.js",
+    "test:quick": "mocha quick-global.test.js",
+    "test:all": "npm run test && npm run test:global"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "chai": "^4.3.0",
+    "sinon": "^15.0.0",
+    "jsdom": "^22.0.0"
+  }
+}
